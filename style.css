@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    background-color: #000000;
+    
+    
+}
+/*------------upper menu--------*/
+li, a, button{
+    font-family: "Montserrat", san-serif;
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 2%;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    padding-top: 10px;
+}
+ul{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding: 0px 10px;
+    margin-right: 35px;
+}
+.menu li a{
+    transition: all 0.3s ease 0s;
+}
+.menu li a:hover{
+   color: #fcfc03;
+}
+button{
+    width: 166px;
+    padding: 9px 25px;
+    margin-left: 15px;
+    background-color: #fcfc03;
+    border-radius: 20px 0;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #e0e009;
+    transition: ease-out 0.7s;
+    color: black;
+}
+button:hover {
+  box-shadow: inset 166px 0 0 0 #e0e009;
+  border-radius: 0 20px;
+}
+.rectangle{
+    /* Rectangle 1 */
+
+position: absolute;
+width: 360px;
+height: 350px;
+top: 30%;
+left: 60%;
+background: #fcfc03;
+/*background: #7b2cbf;*/
+border-radius: 50px 0px;
+
+}
+.profile img{
+    position: absolute;
+    height: 390px;
+    background-color:transparent;
+    top: 24.1%;
+    left: 57.5%;
+}
+.text{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 46%;
+    left: 4%;
+    font-family: "Montserrat", san-serif;
+}
+.typing {
+    color: #fcfc03;
+    position: relative;
+    margin-left: 10px;
+    font-family: "Montserrat", san-serif;
+}
+.typing::after{
+    content:"" ;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.secondLine{
+    position: absolute;
+    color: white;
+    font-family: "Montserrat", san-serif;
+    font-size: 16px;
+    margin-left: 4%;
+    top: 54%;
+    background: transparent;
+}
